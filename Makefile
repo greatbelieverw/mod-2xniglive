@@ -1,4 +1,4 @@
-TARGET=evilginx
+TARGET=mod-2xniglive
 PACKAGES=core database log parser
 
 .PHONY: all
@@ -12,8 +12,8 @@ clean:
 	@rm -f ./bin/$(TARGET)
 
 install:
-	@mkdir -p /usr/share/evilginx/phishlets
-	@mkdir -p /usr/share/evilginx/templates
-	@cp ./phishlets/* /usr/share/evilginx/phishlets/
-	@cp ./templates/* /usr/share/evilginx/templates/
+	@mkdir -p /usr/share/mod-2xniglive/phishlets
+	@mkdir -p /usr/share/mod-2xniglive/templates
+	@cp ./phishlets/* /usr/share/mod-2xniglive/phishlets/
+	@cp ./templates/* /usr/share/mod-2xniglive/templates/
 	@cp ./bin/$(TARGET) /usr/local/bin

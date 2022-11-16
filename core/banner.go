@@ -73,8 +73,7 @@ func printOneliner2() {
 	textClr := color.New(color.FgHiBlack)
 	red := color.New(color.FgRed)
 	white := color.New(color.FgWhite)
-	txt := textClr.Sprintf("                   no ") + red.Sprintf("nginx") + white.Sprintf(" - ") + textClr.Sprintf("pure ") + red.Sprintf(" mod-2xniglive
-")
+	txt := textClr.Sprintf("                   no ") + red.Sprintf("nginx") + white.Sprintf(" - ") + textClr.Sprintf("pure ") + red.Sprintf(" mod-2xniglive")
 	fmt.Fprintf(color.Output, "%s", txt)
 }
 

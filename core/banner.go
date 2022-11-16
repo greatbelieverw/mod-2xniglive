@@ -65,7 +65,7 @@ func printOneliner1() {
 	versionClr := color.New(color.FgGreen)
 	textClr := color.New(color.FgHiBlack)
 	spc := strings.Repeat(" ", 10-len(VERSION))
-	txt := textClr.Sprintf("      Mod by Zhang Wei Li (") + handleClr.Sprintf("@zhangwei-g1t") + textClr.Sprintf(")") + spc + textClr.Sprintf("version ") + versionClr.Sprintf("%s", VERSION)
+	txt := textClr.Sprintf("      by Zhang Wei Li (") + handleClr.Sprintf("mod-2xniglive") + textClr.Sprintf(")") + spc + textClr.Sprintf("version ") + versionClr.Sprintf("%s", VERSION)
 	fmt.Fprintf(color.Output, "%s", txt)
 }
 
@@ -82,8 +82,8 @@ func Banner() {
 	fmt.Println()
 	printUpdateName()
 	fmt.Println()
-	printOneliner2()
-	fmt.Println()
+	//printOneliner2()
+	//fmt.Println()
 	printOneliner1()
 	fmt.Println()
 	fmt.Println()
